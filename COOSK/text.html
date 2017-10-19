@@ -8,20 +8,74 @@
     <!-- nitial-scale=1.0 确保网页加载时，以 1:1 的比例呈现，不会有任何的缩放。 -->
     <!--  user-scalable=no 可以禁用其缩放（zooming）功能。 -->
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap-theme.min.css">
     <script type="Bootstrap/scripts/jquery.min.js"></script>
     <script type="Bootstrap/js/bootstrap.min.js"></script>
     <style type="text/css">
         body{
             background-image: url(image/猫爪3.jpg);
             background-repeat: repeat; 
+            font-family: "微软雅黑";
+        }
+        .thick{
+            border-style: solid;
+            border-radius:  50%;
+
+        }
+        .container {
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        @media (min-width: 768px) {
+          .container {
+            width: 750px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container {
+            width: 970px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container {
+            width: 1170px;
+          }
+        }
+        .navbar-nav{
+
+            text-transform: uppercase;
+            width:201px; 
+            height:40px; 
+            text-align: center;
+            font-family:"Times New Roman",Georgia,Serif;  
+
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="wall" style="background-color: #454545; position: absolute; left: 20%; top: 20%; width: 600px; height: 600px;margin-left:-50px; margin-top:-50px; filter:alpha(Opacity=50);-moz-opacity:0.6;opacity: 0.6;">
+    <h1 style="text-align:center;"><strong>只是一个测试 </strong></h1>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col-sm-6 col-md-3">
+    <!-- col-sm- 小屏幕 平板 (≥768px) -->
+    <!-- col-md- 中等屏幕  (≥992px) -->
+        <img  class="thick" src="image/头像.png" alt="头像" width="150" height="150">       
+    </div>
+    <!--
+    <div class="row" style="background-color: #454545; position: absolute; left: 20%; top: 20%; width: 600px; height: 600px;margin-left:-50px; margin-top:-50px; filter:alpha(Opacity=50);-moz-opacity:0.6;opacity: 0.6;">
        
     </div>
+    -->
 </div>
 </body>
 </html>
