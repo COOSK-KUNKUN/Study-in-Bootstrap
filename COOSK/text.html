@@ -17,11 +17,11 @@
             font-family: "微软雅黑";
         }
         .thick{
-            border-style: solid;
+            border-style: solid #FFB6C1;
             border-radius:  50%;
             position: relative;
-            margin-top:50%;
-            margin-left: 50%;
+            margin-top:15%;
+
 
         }
         .container {
@@ -54,7 +54,10 @@
             font-family:"微软雅黑",Georgia,Serif;  
 
         }
-
+        .button{
+            text-align: center;
+            margin-top: 5%; 
+        }
     </style>
 </head>
 <body>
@@ -89,16 +92,27 @@
 
     </nav>
 
-    <div class="col-sm-6 col-md-3">
+
+    <div class="col-sm-6 col-md-3" style="background-color: #FAF0E6; width: 325px; height: 325px; margin-top: 2%; text-align: center; border:2px solid #FFB6C1;float:left;">
     <!-- col-sm- 小屏幕 平板 (≥768px) -->
     <!-- col-md- 中等屏幕  (≥992px) -->
-        <img  class="thick" src="image/头像.png" alt="头像" width="150" height="150">       
+        
+        <img  class="thick" src="image/头像.png" alt="头像" width="150" height="150" > 
+        
+        <p class="button">头像测试</p>
     </div>
+
+    <div class="col-sm-6 col-md-5" style="background-color: #FAF0E6; width: 900px; height: 325px;  margin-left: 3%;margin-top: 2%; float:left;border:2px solid #FFB6C1;">
+        
+        <div class="col-sm-8 col-md-12" style="text-align: center;background-color: #FAF0E6;;">
+            Parisian Women in Algerian Costume (The Harem) is a painting by the French artist Pierre-Auguste Renoir completed 1872. 
+        </div>
     <!--
     <div class="row" style="background-color: #454545; position: absolute; left: 20%; top: 20%; width: 600px; height: 600px;margin-left:-50px; margin-top:-50px; filter:alpha(Opacity=50);-moz-opacity:0.6;opacity: 0.6;">
        
     </div>
     -->
+    </div>
 </div>
     <script type="Bootstrap/scripts/jquery.min.js"></script>
     <script type="Bootstrap/js/bootstrap.min.js"></script>
