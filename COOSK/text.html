@@ -9,8 +9,7 @@
     <!--  user-scalable=no 可以禁用其缩放（zooming）功能。 -->
     <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap-theme.min.css">
-    <script type="Bootstrap/scripts/jquery.min.js"></script>
-    <script type="Bootstrap/js/bootstrap.min.js"></script>
+
     <style type="text/css">
         body{
             background-image: url(image/猫爪3.jpg);
@@ -20,6 +19,9 @@
         .thick{
             border-style: solid;
             border-radius:  50%;
+            position: relative;
+            margin-top:50%;
+            margin-left: 50%;
 
         }
         .container {
@@ -47,25 +49,46 @@
 
             text-transform: uppercase;
             width:201px; 
-            height:40px; 
+            height:30px; 
             text-align: center;
-            font-family:"Times New Roman",Georgia,Serif;  
+            font-family:"微软雅黑",Georgia,Serif;  
 
         }
+
     </style>
 </head>
 <body>
 <div class="container">
     <h1 style="text-align:center;"><strong>只是一个测试 </strong></h1>
-    <nav class="navbar navbar-inverse">
-        <div class="navbar-collapse">
+    <nav class="navbar navbar-default" role="navigation">
+    <!-- navbar-default 白底菜单 -->
+    <!-- navbar-inverse 黑底菜单 -->
+
+        <div id="navbar-menu" class="collapes">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">About</a></li>
+                <li><span class="icon-bar"><a href="#" style="text-decoration:none">Home</a></span></li>
+                <li><a href="#" style="text-decoration:none">Music</a></li>
+                <li><a href="#" style="text-decoration:none">About</a></li>
             </ul>
         </div>
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapesd" data-toggle="collapes" data-target="#example-navbar-collapse" aria-expanded="false">
+            <!-- navbar-toggle 用于告诉 JavaScript 需要对按钮做什么 -->
+            <!-- data-target 指示要切换到哪一个元素 -->
+            <!-- aria-expanded表示展开状态。默认为undefined, 表示当前展开状态未知。其它可选值：true表示元素是展开的；false表示元素不是展开的 -->
+
+                <span class="sr-only">Sonw</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-menu" href="#">Brand</a>
+        </div>
+
+
     </nav>
+
     <div class="col-sm-6 col-md-3">
     <!-- col-sm- 小屏幕 平板 (≥768px) -->
     <!-- col-md- 中等屏幕  (≥992px) -->
@@ -77,5 +100,7 @@
     </div>
     -->
 </div>
+    <script type="Bootstrap/scripts/jquery.min.js"></script>
+    <script type="Bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
